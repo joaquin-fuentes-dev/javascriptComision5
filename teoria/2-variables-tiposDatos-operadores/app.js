@@ -1,5 +1,5 @@
 // Variables
-let edad = 40;
+// let edad = 40;
 
 const pi = 3.14;
 
@@ -20,8 +20,8 @@ console.log(precio);
 let activo = true;
 console.log(activo);
 // null
-let nombre = null;
-console.log(nombre);
+// let nombre = null;
+// console.log(nombre);
 // undefined
 let apellido;
 console.log(apellido);
@@ -47,3 +47,14 @@ let D = 0;
 A--;
 A--;
 console.log(A);
+
+// 1️⃣ Pedí al usuario su nombre y mostralo en un saludo.
+// 👉 Ejemplo: Si escribe "Lucas", debe mostrarse: "Hola Lucas, ¡bienvenido!"
+
+// let nombre = prompt("Ingrese su nombre:");
+// let confirmar = confirm("Acepta los terminos y condiciones?");
+// El prompt siempre guarda un tipo de dato STRING
+let edad = parseInt(prompt("Ingrese su edad:"));
+// console.log("Hola", nombre);
+// console.log(confirmar);
+console.log(edad);
