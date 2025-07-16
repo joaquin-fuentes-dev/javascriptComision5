@@ -54,7 +54,8 @@ console.log(A);
 // let nombre = prompt("Ingrese su nombre:");
 // let confirmar = confirm("Acepta los terminos y condiciones?");
 // El prompt siempre guarda un tipo de dato STRING
-let edad = parseInt(prompt("Ingrese su edad:"));
+// let edad = parseInt(prompt("Ingrese su edad:"));
 // console.log("Hola", nombre);
 // console.log(confirmar);
-console.log(edad);
+// console.log(edad);
+alert("MENSAJE DE ALERTA");
