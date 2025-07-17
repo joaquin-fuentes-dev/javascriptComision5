@@ -10,16 +10,18 @@ let textoRemplazado = texto.replace("Mundo", "Bruno");
 let textoSinEspacios = texto.trim();
 
 // Objeto Math (Números)
-let numA = 10;
-let numB = 27;
-let numC = 100;
-let numD = -5;
+let numeroMasBajo = Math.min(-55, 100, 25, 5, 7, 3, 9, 20);
+let numeroMasAlto = Math.max(-55, 100, 25, 5, 7, 3, 9, 20);
+let numeroRedondeadoHaciaAbajo = Math.floor(7.9999);
+let numeroRedondeadoHaciaArriba = Math.ceil(7.1111);
+let numeroRedondeadoNormal = Math.floor(7.5);
+let numeroAleatorioEntre0Y1 = Math.random();
 
-console.log(Math.min(-55, 100, 25, 5, 7, 3, 9, 20));
-console.log(Math.max(-55, 100, 25, 5, 7, 3, 9, 20));
-console.log(Math.floor(7.9999));
-console.log(Math.ceil(7.1111));
-console.log(Math.floor(7.5));
-console.log(Math.random());
-console.log(Math.random() * 100);
-console.log(Math.floor(Math.random() * 100));
+console.log(numeroMasBajo);
+console.log(numeroMasAlto);
+console.log(numeroRedondeadoHaciaAbajo);
+console.log(numeroRedondeadoHaciaArriba);
+console.log(numeroRedondeadoNormal);
+console.log(numeroAleatorioEntre0Y1);
+console.log(numeroAleatorioEntre0Y1 * 100);
+console.log(Math.floor(numeroAleatorioEntre0Y1 * 100));
