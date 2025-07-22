@@ -1,0 +1,59 @@
+
+
+📌 1. Nivel de batería del celular
+Instrucciones:
+
+Pedí al usuario que ingrese el nivel de batería (un número del 0 al 100) usando prompt().
+
+Convertí ese valor a número utilizando parseInt().
+
+Usá una estructura if / else if / else para mostrar por consola uno de los siguientes mensajes, según el nivel de batería ingresado:
+
+Si el valor es mayor o igual a 80, mostrar: "Batería llena 🔋".
+
+Si el valor es mayor o igual a 30, mostrar: "Batería media ⚠️".
+
+Si el valor es menor a 30, mostrar: "Batería baja, conectá el cargador 🔌".
+
+📌 2. Notas de examen
+Instrucciones:
+
+Pedí al usuadio que ingrese una nota, del 1 al 10
+
+si ingresa 10 debes devolverle "EXCELENTE 10 TE FELICITO"
+
+si ingresa 8 o 9 debes devolverle "Muy bueno!"
+
+si ingresa 6 o 7 debes devolverle "Bueno"
+
+si ingresa 4 o 5 debes devolverle "Desaprobado"
+
+si ingresa 3, 2 o 1 debes devolverle "Desaprobado Malisimo a Marzo"
+
+si el valor ingresado no esta en el rango debe mostrar al usuario un msj que diga que ingrese
+un numero valido entre 1 y 10
+
+
+📌 3. Menú de cajero automático (con switch)
+Instrucciones:
+
+Mostrá al usuario un menú de opciones usando prompt() con este formato:
+
+1 - Consultar saldo  
+2 - Retirar dinero  
+3 - Depositar dinero  
+4 - Salir
+
+Convertí la opción ingresada a número usando parseInt().
+
+Usá una estructura switch para mostrar por consola el mensaje correspondiente a cada opción:
+
+Si elige 1, mostrar: "Mostrando saldo...".
+
+Si elige 2, mostrar: "Procediendo al retiro de dinero...".
+
+Si elige 3, mostrar: "Preparando depósito...".
+
+Si elige 4, mostrar: "Gracias por usar el cajero. ¡Hasta luego!".
+
+En cualquier otro caso, mostrar: "Opción inválida. Intente de nuevo."

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales</title>
+  </head>
+  <body>
+    <h1>Condicionales</h1>
+
+    <script>
+      //   let edad = parseInt(
+      //     prompt("Ingrese su edad para ver si adquiere un carnet de manejo:")
+      //   );
+
+      //   if (edad > 18) {
+      //     console.log("Sos Mayor de edad! felicidades! te ganaste un auto 0km!");
+      //   } else {
+      //     console.log("No sos mayor de edad, perdiste un auto 0km  :( ");
+      //   }
+
+      //   if (edad >= 18) {
+      //     console.log("Sos MAYOR, Podés sacar el carnet. Felicidades");
+      //   } else if (edad >= 16) {
+      //     console.log(
+      //       "No sos mayor, pero podes sacar el carnet con autorizacion de tus padres"
+      //     );
+      //   } else {
+      //     console.log(
+      //       "No sos mayor, por lo tanto no podes tener carnet de manejo. chau"
+      //     );
+      //   }
+
+      let nombreBanda = "";
+      let cancion = "";
+
+      nombreBanda = prompt("Ingrese el nombre de una banda:").toLowerCase();
+      //   if (nombreBanda === "Los piojos") {
+      //     cancion = "Bicho de ciudad";
+      //   } else if (nombreBanda === "La renga") {
+      //     cancion = "Una triste canción de amor";
+      //   } else if (nombreBanda === "Divididos") {
+      //     cancion = "Spaghetti del rock";
+      //   } else {
+      //     cancion = "No ingresaste ninguna banda conocida";
+      //   }
+      switch (nombreBanda) {
+        case "Los piojos".toLowerCase():
+          cancion = "Bicho de ciudad";
+          break;
+        case "La renga".toLowerCase():
+          cancion = "Una triste canción de amor";
+          break;
+        case "Divididos".toLowerCase():
+          cancion = "Spaghetti del rock";
+          break;
+        case "Soda Stereo".toLowerCase():
+          cancion = "Profugos";
+          break;
+        default:
+          cancion = "No ingresaste ninguna banda conocida";
+          break;
+      }
+
+      console.log(cancion);
+    </script>
+  </body>
+</html>
