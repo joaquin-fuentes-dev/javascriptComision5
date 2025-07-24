@@ -15,6 +15,7 @@ Si el valor es mayor o igual a 30, mostrar: "Batería media ⚠️".
 
 Si el valor es menor a 30, mostrar: "Batería baja, conectá el cargador 🔌".
 
+
 📌 2. Notas de examen
 Instrucciones:
 

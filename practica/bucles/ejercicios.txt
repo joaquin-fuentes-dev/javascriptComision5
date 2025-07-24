@@ -1,0 +1,42 @@
+🧪 Ejercicio 1: Contador de múltiplos
+✅ Tipo: for
+🎯 Objetivo: Usar bucle con condición
+🧠 Habilidades: iteración, condición dentro del bucle
+
+Consigna:
+
+Mostrar por consola los números del 1 al 50 que sean múltiplos de 3. Al final, mostrar cuántos múltiplos de 3 hubo.
+
+
+
+🧪 Ejercicio 2: Adivina el número secreto
+✅ Tipo: while
+🎯 Objetivo: Repetir hasta que acierten
+🧠 Habilidades: uso de variables, condiciones, prompt
+
+Consigna:
+
+El programa genera un número secreto entre 1 y 10. El usuario tiene que adivinarlo, y el bucle continúa hasta que acierte. Mostrar cuántos intentos le tomó.
+
+Podés usar Math.floor(Math.random() * 10) + 1 para generar el número.
+
+Extra opcional para pensar: si lo adivina en el primer intento, mostrar un mensaje especial.
+
+
+
+
+
+🧪 Ejercicio 3: Menú interactivo
+✅ Tipo: do...while
+🎯 Objetivo: Menú que se repite hasta salir
+🧠 Habilidades: estructuras de control, interacción con el usuario
+
+Consigna:
+
+Crear un menú que se repite hasta que el usuario elija salir. Las opciones pueden ser:
+
+1- Consultar Saldo 
+2- Realizar extraccion 
+3- Salir
+
+
