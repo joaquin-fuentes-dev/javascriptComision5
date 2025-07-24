@@ -10,6 +10,10 @@ for (let i = 1; i <= 5; i++) {
   if (i === 3) continue;
   console.log(i);
 }
+// salto de linea
+let opcion = prompt(
+  "Elegí una opción:\n1. Saludar\n2. Mostrar fecha\n3. Salir"
+);
 
 // let numeroDeLaSuerte = 10;
 // let numeroIngresaElusuario = parseInt(prompt("Ingrese el numero de la suerte"));
