@@ -26,8 +26,6 @@
 
 // let alumnos = ["Joaquin", "Franco", "Bruno", "y tpdos le resto"];
 
-let frutas = ["manzana", "banana", "naranja", "uva"];
-
 // acceder y modificar un valor de un elemento
 // frutas[1] = 27;
 // console.log(frutas[1]);
@@ -54,6 +52,31 @@ let frutas = ["manzana", "banana", "naranja", "uva"];
 
 // Verifica si existe un elemento en un array
 
-let existe = frutas.includes("manzana");
+// let existe = frutas.includes("manzana");
 
-console.log(existe);
+// Verificar la posicion de un elemento
+
+// let posicion = frutas.indexOf("loquesea");
+
+// AggregateError, reemplazar o eliminar un elemento de una posicion especifica
+// frutas.splice(3, 1, "Cosa");
+
+// Hacer una copia de un Array, indicando que elementos quiero
+
+// let nuevoArray = frutas.slice(0, 2);
+
+// console.log(frutas);
+// console.log(nuevoArray);
+
+let frutas = ["manzana", "banana", "naranja", "uva"];
+frutas.push("elemento2");
+frutas.push("elemento3");
+frutas.push("elemento4");
+
+for (let i = 0; i < frutas.length; i++) {
+  console.log(frutas[i]);
+}
+
+// for (let fruta of frutas) {
+//   console.log(fruta);
+// }
