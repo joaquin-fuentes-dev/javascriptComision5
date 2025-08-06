@@ -5,9 +5,7 @@
 
 // Fórmula: F = C × 1.8 + 32
 
-
 let numeros = [30, 50, 10, 35]
-
 
 // ✅ 2. filter - Filtrar palabras con más de 5 letras
 // Enunciado:
@@ -18,4 +16,5 @@ let palabras  = ["auto", "telescopio"]
 // ✅ 3. indexOf - Buscar la posición de una palabra específica
 // Enunciado:
 // Dado un array de palabras, usá indexOf para encontrar la 
-// posición de una palabra específica. Si no está, devolvé -1.
+// posición de una palabra específica. Si no está, devolvé -1. 
+// si usan findIndex deben pasar un useCallback, y si usan indexOf deben pasar el item directamente en el parametro

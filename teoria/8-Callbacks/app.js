@@ -9,9 +9,9 @@ function procesarEntradaUsuario(callback) {
 
 // procesarEntradaUsuario(saludar);
 
-setTimeout(function () {
-  console.log("Hola mundo");
-}, 5000); // Milisegundos hasta que se ejecuta la funcion callback
+// setTimeout(function () {
+//   console.log("Hola mundo");
+// }, 5000); // Milisegundos hasta que se ejecuta la funcion callback
 
 const frutas = ["manzana", "pera", "banana"];
 
@@ -46,4 +46,4 @@ nombres.sort();
 // console.log(nombres);
 
 edades.sort((a, b) => a - b).reverse();
-console.log(edades);
+// console.log(edades);
