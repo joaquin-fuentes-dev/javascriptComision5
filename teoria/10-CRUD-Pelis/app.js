@@ -83,7 +83,7 @@ function eliminarPelicula() {
   localStorage.setItem("peliculas", JSON.stringify(peliculas));
   console.log("🗑️ Película eliminada:", peliculaEliminada[0].titulo);
 }
-// ESTO DEBEN HACER USTEDEES PARA LA CLASE SIGUIENTE!!!!!!
+// ESTO DEBEN HACER USTEDEES PARA LA CLASE SIGUIENTE!!!!!! Y TAMBIEN DEBEN LEER LA DIAPOSITIVA DE DOM Y BOM
 function guardarEnLocalStorage() {}
 
 function obtenerDelLocalStorage() {}
