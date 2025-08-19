@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h2 class="titulo" id="tituloPrincipal">Introduccion al DOM</h2>
+    <h3>Listado de tareas</h3>
+    <ul id="listadoTareas"></ul>
+    <script>
+      const tareas = [
+        "Revisar correos pendientes",
+        "Actualizar el repositorio en GitHub",
+        "Preparar la reunión de equipo",
+        "Desarrollar componente de login",
+        "Corregir errores reportados en QA",
+        "Escribir documentación del API",
+        "Hacer backup de la base de datos",
+      ];
+
+      tareas.forEach((tarea) => {
+        const tareaLi = document.createElement("li");
+        tareaLi.textContent = tarea;
+        const listadoTareas = document.getElementById("listadoTareas");
+        listadoTareas.appendChild(tareaLi);
+      });
+    </script>
+  </body>
+</html>

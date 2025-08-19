@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios dom</title>
+  </head>
+  <body>
+    <h1>Ejercicios</h1>
+
+    <h2>Ejemplo 1: Mostrar un saludo usando un prompt</h2>
+    <p id="parrafo1"></p>
+
+    <h2>Ejemplo 2: Confirmar accion y mostrar mensaje</h2>
+    <p id="parrafoId2"></p>
+
+    <script>
+      function ejercicio1() {
+        const nombre = prompt("Ingrese su nombre");
+        const parrafo1 = document.getElementById("parrafo1");
+        parrafo1.textContent = `Hola ${nombre} como estas`;
+      }
+
+      function ejercicio2() {
+        const confirmar = confirm("Desea mostrar el mensaje?????");
+        const parrafoId2 = document.getElementById("parrafoId2");
+        if (confirmar) {
+          parrafoId2.textContent = "Muchas gracias por mostrarme!";
+        } else {
+          parrafoId2.textContent = "Uufa todo mal";
+        }
+      }
+      ejercicio2();
+    </script>
+  </body>
+</html>
