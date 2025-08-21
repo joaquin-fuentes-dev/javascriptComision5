@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 🧩 Ejercicio 2 (modificado): Lista dinámica de tareas -->
+    <h2>Ejercicio 2: Lista dinámica de tareas</h2>
+    <p>
+      💬 Consigna: Escribir una tarea y, al hacer clic, agregarla a la lista.
+      Ideal para simular una To-Do list.
+    </p>
+
+    <br />
+    <br />
+    <h1>Listado de tareas:</h1>
+    <form id="formulario">
+      <label for="">Tarea:</label>
+      <input
+        type="text"
+        placeholder="Ingrese la tarea que debe realizar"
+        id="tarea"
+      />
+      <button>Cargar tarea</button>
+    </form>
+    <ul id="listadoDeTareas"></ul>
+
+    <script>
+      let tareasArray = [];
+      const formulario = document.getElementById("formulario");
+      const tarea = document.getElementById("tarea");
+      const listadoDeTareas = document.getElementById("listadoDeTareas");
+
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+        // obtener el dato que ingrese en el input
+        // que el dato obtenido se agregue al array de tareasArray
+        tareasArray.push(tarea.value);
+        const li = document.createElement("li");
+        li.textContent = tarea.value;
+        listadoDeTareas.appendChild(li);
+        tarea.value = "";
+      });
+
+      /*  formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+        // obtener el dato que ingrese en el input
+        // que el dato obtenido se agregue al array de tareasArray
+        tareasArray.push(tarea.value);
+        tarea.value = "";
+        // mostrar el listado de tareas
+        listadoDeTareas.textContent = "";
+        tareasArray.forEach((tarea) => {
+          const li = document.createElement("li");
+          li.textContent = tarea;
+          listadoDeTareas.appendChild(li);
+        });
+      }); */
+    </script>
+  </body>
+</html>

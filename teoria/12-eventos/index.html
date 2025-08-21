@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos</title>
+  </head>
+  <body>
+    <h1>EVENTOS EN JAVASCRIPT</h1>
+    <button id="btnSaludar">Saludar</button>
+    <form id="formulario">
+      <input type="text" id="nombre" />
+      <button>enviar</button>
+    </form>
+
+    <script>
+      const btnSaludar = document.getElementById("btnSaludar");
+      const formulario = document.getElementById("formulario");
+      const nombre = document.getElementById("nombre");
+
+      let nombreInput;
+      nombre.addEventListener("change", (evento) => {
+        console.log(evento.target.value);
+        nombreInput = evento.target.value;
+      });
+
+      formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
+        alert(nombreInput);
+      });
+
+      //   function saludar() {
+      //     alert("Hola mundo");
+      //   }
+    </script>
+  </body>
+</html>

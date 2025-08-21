@@ -6,8 +6,6 @@
     <title>DOM</title>
   </head>
   <body>
-    <h2 class="titulo" id="tituloPrincipal">Introduccion al DOM</h2>
-    <h3>Listado de tareas</h3>
     <ul id="listadoTareas"></ul>
     <script>
       const tareas = [
@@ -21,10 +19,13 @@
       ];
 
       tareas.forEach((tarea) => {
-        const tareaLi = document.createElement("li");
-        tareaLi.textContent = tarea;
         const listadoTareas = document.getElementById("listadoTareas");
-        listadoTareas.appendChild(tareaLi);
+        listadoTareas.innerHTML += `<h2>Ejemplo 1: Mostrar un saludo usando un prompt</h2>
+    <p id="parrafo1"></p>
+
+    <h2>Ejemplo 2:accion y mostrar mensaje</h2>
+    <p id="parrafoId2"></p> 
+`;
       });
     </script>
   </body>

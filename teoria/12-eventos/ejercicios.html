@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 🧩 Ejercicio 1 -->
+    <h2>Ejercicio 1: Botón que cambie el contenido de un párrafo</h2>
+    <p>
+      💬 Consigna: Al hacer clic en el botón, debe aparecer un mensaje divertido
+      en el párrafo.
+    </p>
+
+    <br />
+    <br />
+    <button ondblclick="mensajeDivertido()">Mostra el mensaje divertido</button>
+
+    <p id="parrafo1">Aqui va a ir el mensaje divertido</p>
+
+    <script>
+      function mensajeDivertido() {
+        const parrafo1 = document.getElementById("parrafo1");
+        parrafo1.textContent = "Un mensaje divertido =)";
+        console.log(parrafo1);
+      }
+    </script>
+  </body>
+</html>
