@@ -12,19 +12,27 @@ async function obtenerProductos() {
 
 function mostrarProductos(productos) {
   const contenedorProductos = document.getElementById("contenedorProductos");
-  productos.forEach((producto) => {
-    const { title, image, description } = producto;
-    contenedorProductos.innerHTML += `<div class="col">
-           <div class="card">
-             <img src="${image}" class="card-img-top" alt="..." />
-             <div class="card-body">
-               <h5 class="card-title">${title}</h5>
-               <p class="card-text">
-                ${description}
-               </p>
-             </div>
-           </div>
-         </div>`;
+  productos.forEach((p) => {
+    contenedorProductos.innerHTML += `
+        <div class="col">
+          <div class="card h-100">
+            <img src="${p.image}" alt="${p.title}" style="height:200px; width:100%; object-fit:cover; border-bottom:1px solid #eee;">
+            <div class="card-body">
+              <h5 class="card-title">${p.title}</h5>
+              <p class="card-text" style="
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+              ">${p.description}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Categoría: ${p.category}</small><br>
+              <strong>$${p.price}</strong>
+            </div>
+          </div>
+        </div>
+      `;
   });
 }
 
