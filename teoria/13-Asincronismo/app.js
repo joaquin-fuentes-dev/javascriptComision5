@@ -32,7 +32,7 @@ const getDatos = () => {
 //   .catch((error) => console.log(error.message))
 //   .finally(() => console.log("Promesa finalizada"));
 
-const api_url = "https://dragonball-api.com/apicharacters?limit=10";
+const api_url = "https://dragonball-api.com/api/characters?limit=10";
 
 async function ejecutar() {
   try {
@@ -49,4 +49,4 @@ async function ejecutar() {
   }
 }
 
-ejecutar();
+// ejecutar();
