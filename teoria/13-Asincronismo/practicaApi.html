@@ -15,8 +15,20 @@
     <h1>Práctica consumo de API - FakeProducts</h1>
     <section class="container">
       <h2 class="text-center mt-4">Listado de productos</h2>
+      <a href="./favoritos.html" class="btn btn-success"
+        >Ir a pagina de favoritos</a
+      >
+      <div class="my-3 d-flex justify-content-center">
+        <span>Buscar productos:</span>
+        <input
+          type="text"
+          id="buscador"
+          placeholder="Escribe para buscar..."
+          class="form-control mx-2"
+        />
+      </div>
       <div class="row row-cols-1 row-cols-md-3 g-4" id="contenedorProductos">
-       
+        <!-- Aquí se cargarán los productos -->
       </div>
     </section>
     <script
